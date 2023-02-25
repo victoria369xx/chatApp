@@ -1,0 +1,1 @@
+export const MARK_CHECKBOX = "MARK_CHECKBOX";
