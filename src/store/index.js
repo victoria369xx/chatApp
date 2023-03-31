@@ -6,7 +6,7 @@ import { messageReducer } from './messages/reducer';
 import { apiReducer } from './api/reducer';
 import { userReducer } from './user/reducer';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__; 
+//const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__; 
 
 
 
@@ -21,5 +21,5 @@ const rootReducer = combineReducers({
 
 export const store = createStore(
 rootReducer,
-composeEnhancers(applyMiddleware(thunk))
+applyMiddleware(thunk)
 );
